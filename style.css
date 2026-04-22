@@ -1,0 +1,102 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f1ea;
+    background-image: url("https://www.transparenttextures.com/patterns/paper.png");
+    color: #111;
+}
+
+/* NAV */
+nav {
+    background: #111;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HOME */
+#home h1 {
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+#home a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+
+/* WEEKLY */
+.issue {
+    padding: 20px;
+    border: 1px solid #111;
+    background: #fdfbf7;
+    transition: transform 0.2s ease;
+}
+
+.issue:hover {
+    transform: translateY(-5px);
+}
+
+.issues {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.issue img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin-bottom: 16px;
+    border: 1px solid #111;
+}
+
+.issue a {
+    display: inline-block;
+    padding: 8px 16px;
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+#home,
+#weekly,
+#about {
+    width: 100%;
+}
+
+#home .content,
+#weekly .content,
+#about .content {
+    max-width: 900px;
+}
