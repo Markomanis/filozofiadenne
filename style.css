@@ -108,3 +108,41 @@ h1, h2, h3 {
     margin: 40px auto;
     border: 1px solid #111;
 }
+
+#about p {
+    max-width: 720px;
+    line-height: 1.55;
+    font-size: 17px;
+    color: #111;
+}
+
+#about {
+    border-top: 1px solid #111;
+    margin-top: 80px;
+    padding-top: 40px;
+}
+
+#about .content {
+    max-width: 760px;
+}
+
+.about-layout {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid #111;
+    filter: grayscale(100%) contrast(1.1);
+}
