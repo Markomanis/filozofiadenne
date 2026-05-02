@@ -146,3 +146,19 @@ h1, h2, h3 {
     border: 1px solid #111;
     filter: grayscale(100%) contrast(1.1);
 }
+
+.issue-pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.issue-pages img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #111;
+}
