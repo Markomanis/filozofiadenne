@@ -4,6 +4,7 @@ body {
     font-family: 'Playfair Display', serif;
     background-color: #f4f1ea;
     background-image: url("https://www.transparenttextures.com/patterns/paper.png");
+    overflow-x: hidden;
     color: #111;
 }
 
@@ -38,6 +39,7 @@ section {
 #home h1 {
     font-size: 64px;
     text-transform: uppercase;
+    overflow-wrap: anywhere;
 }
 
 #home a {
