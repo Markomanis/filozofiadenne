@@ -211,24 +211,67 @@ zvaz-image {
 
 @media (max-width: 768px) {
 
-    section {
-        padding: 50px 24px;
+    body {
+        overflow-x: hidden;
     }
 
-    #home h1 {
-        font-size: 48px;
-        line-height: 1;
-        word-break: break-word;
+    nav {
+        padding: 12px 16px;
     }
 
     nav ul {
         flex-wrap: wrap;
-        gap: 14px;
+        gap: 14px 18px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 42px 22px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #home {
+        min-height: auto;
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    #home h1 {
+        font-size: 34px;
+        line-height: 1.05;
+        letter-spacing: 0.5px;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    #home p {
+        font-size: 20px;
+        line-height: 1.3;
+        max-width: 100%;
+    }
+
+    #home a {
+        font-size: 18px;
+        padding: 12px 18px;
     }
 
     .issues {
         grid-template-columns: 1fr;
-    }   
+    }
+
+    .issue {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .issue img {
+        max-width: 100%;
+    }
 
     .about-layout {
         flex-direction: column;
@@ -236,5 +279,6 @@ zvaz-image {
 
     .about-image img {
         max-width: 220px;
+        margin: 0;
     }
 }
