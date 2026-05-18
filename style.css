@@ -51,7 +51,7 @@ section {
 
 /* WEEKLY */
 .issue {
-    padding: 20px;
+    padding: 16px;
     border: 1px solid #111;
     background: #fdfbf7;
     transition: transform 0.2s ease;
@@ -64,15 +64,16 @@ section {
 .issues {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 40px;
+    gap: 28px;
     margin-top: 40px;
+    align-items: start;
 }
 
 .issue img {
     width: 100%;
-    max-width: 700px;
+    max-width: 240px;
     display: block;
-    margin-bottom: 16px;
+    margin: 16px auto;
     border: 1px solid #111;
 }
 
@@ -87,6 +88,11 @@ section {
 h1, h2, h3 {
     font-weight: 900;
     letter-spacing: 1px;
+}
+
+.issue h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 #home,
