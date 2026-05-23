@@ -53,6 +53,8 @@ section {
 
 /* WEEKLY */
 .issue {
+    flex: 0 0 320px;
+    scroll-snap-align: start;
     padding: 16px;
     border: 1px solid #111;
     background: #fdfbf7;
@@ -64,11 +66,12 @@ section {
 }
 
 .issues {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
     gap: 28px;
     margin-top: 40px;
-    align-items: start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
 }
 
 .issue img {
