@@ -212,6 +212,14 @@ zvaz-image {
     opacity: 1;
 }
 
+.swipe-hint {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     body {
@@ -283,5 +291,11 @@ zvaz-image {
     .about-image img {
         max-width: 220px;
         margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .swipe-hint {
+        display: block;
     }
 }
