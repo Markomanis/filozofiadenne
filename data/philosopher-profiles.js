@@ -46,7 +46,7 @@ const customProfiles = {
         era: "Predsokratovci",
         school: "Milétska škola",
         image: "images/philosophers/anaximander.png",
-        description: "Anaximandros rozšíril milétske hľadanie počiatku sveta o odvážnejší pojem: apeiron, neurčité a bezhraničné. Jeho myslenie pôsobí ako prvý pokus zachytiť kozmos nie ako zbierku príbehov, ale ako poriadok, ktorý vzniká, zaniká a vyrovnáva svoje napätia.",
+        description: "Profil čaká na redakčné spracovanie.",
         ideas: [
                 "apeiron",
                 "kozmický poriadok",
@@ -103,7 +103,7 @@ const customProfiles = {
         era: "Predsokratovci",
         school: "Iónska filozofia",
         image: "images/philosophers/heraclitus.png",
-        description: "Herakleitos videl svet ako napätý pohyb, v ktorom sa veci držia pohromade práve cez zápas protikladov. Jeho logos nie je lacný poriadok bez konfliktu, ale hlboký rytmus skutočnosti, ktorý človek často prehliada, hoci v ňom stále žije.",
+        description: "Profil čaká na redakčné spracovanie.",
         ideas: [
                 "logos",
                 "premenlivosť",
@@ -220,7 +220,7 @@ const customProfiles = {
         era: "Klasické Grécko",
         school: "Sokratovská tradícia",
         image: "images/philosophers/socrates.png",
-        description: "Sokrates obrátil filozofiu k ľudskej duši a k otázke, ako má človek žiť. Nepísal systém; vstupoval do rozhovorov, v ktorých rozrušoval istoty svojich partnerov a ukazoval, že nevedomosť priznaná čestne môže byť začiatkom múdrosti.",
+        description: "Profil čaká na redakčné spracovanie.",
         ideas: [
                 "sokratovský rozhovor",
                 "starosť o dušu",
@@ -349,7 +349,7 @@ const customProfiles = {
         era: "Klasické Grécko",
         school: "Akadémia",
         image: "images/philosophers/plato.png",
-        description: "Platón premieňa sokratovský rozhovor na veľkú filozofickú scénu. V jeho dialógoch sa otázka spravodlivosti, lásky, poznania a duše stále vracia k tomu, či viditeľný svet nie je iba tieňom hlbšieho poriadku ideí.",
+        description: "Profil čaká na redakčné spracovanie.",
         ideas: [
                 "teória ideí",
                 "dialektika",
@@ -439,7 +439,7 @@ const customProfiles = {
         era: "Klasické Grécko",
         school: "Peripatetická škola",
         image: "images/philosophers/aristotle.png",
-        description: "Aristoteles je mysliteľ pozornosti k veciam: k pohybu, prírode, reči, cnosti, obci aj básnickému dielu. Namiesto úniku od sveta skúma jeho tvary a príčiny, akoby filozofia mala začínať trpezlivým pohľadom na to, čo je pred nami.",
+        description: "Profil čaká na redakčné spracovanie.",
         ideas: [
                 "substancia",
                 "štyri príčiny",
@@ -718,7 +718,7 @@ const customProfiles = {
         era: "Rímska filozofia",
         school: "Stoicizmus",
         image: "images/philosophers/marcus-aurelius.png",
-        description: "Marcus Aurelius píše ako človek, ktorý vládne ríši, no zároveň sa učí vládnuť sebe. Jeho zápisky sú tichým cvičením pozornosti: pripomínajú pominuteľnosť, povinnosť, miernosť a potrebu konať dobre aj uprostred tlaku sveta.",
+        description: "Profil čaká na redakčné spracovanie.",
         ideas: [
                 "pominuteľnosť",
                 "povinnosť",
