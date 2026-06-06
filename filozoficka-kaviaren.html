@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filozofická kaviareň | FilozofiaDenne</title>
+    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="filozoficka-kaviaren.css?v=9">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body class="cafe-page">
+
+    <nav>
+        <ul>
+            <li><a href="index.html#home">Úvod</a></li>
+            <li><a href="index.html#weekly">Týždenník</a></li>
+            <li><a href="index.html#about">O mne</a></li>
+            <li><a href="filozoficka-kaviaren.html" aria-current="page">Filozofická kaviareň</a></li>
+            <li><a href="zvaz.html">Filozofický zväz</a></li>
+        </ul>
+    </nav>
+
+    <main class="cafe-shell">
+        <header class="cafe-intro">
+            <p class="cafe-kicker">filozoficky zapisnik</p>
+            <h1>Filozofická kaviareň</h1>
+            <p>Na časovej osi aktívne pracujem každý týždeň. Update: 07.06.2026 - pridaný Diogenes zo Sinopy</p>
+            <br>
+            <p>Chronologický zápisník západnej filozofie. Posuň časovú os, vyber filozofa a na stole sa otvorí jeho/jej katalógová karta.</p>
+        </header>
+
+        <section class="philosophy-timeline" aria-label="Chronologická časová os filozofov">
+            <div id="selected-philosopher-card" class="philosopher-detail" aria-live="polite"></div>
+
+            <div class="timeline-controls" aria-label="Ovládanie časovej osi">
+                <button class="scroll-button scroll-button-left" type="button" aria-label="Posunúť časovú os doľava">‹</button>
+                <div id="philosopher-timeline" class="timeline-track" tabindex="0" aria-label="Časová os filozofov"></div>
+                <button class="scroll-button scroll-button-right" type="button" aria-label="Posunúť časovú os doprava">›</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="data/philosopher-profiles.js?v=2"></script>
+    <script src="filozoficka-kaviaren.js?v=16"></script>
+</body>
+</html>

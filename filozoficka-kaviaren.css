@@ -1,0 +1,426 @@
+:root {
+    --paper: #f4f1ea;
+    --paper-warm: #fff8e8;
+    --paper-deep: #ead8bd;
+    --ink: #111;
+    --muted-ink: #5d5145;
+    --coffee: #7a4a2a;
+    --coffee-dark: #2b1710;
+    --coffee-light: #c89455;
+    --line: #111;
+    --pixel-font: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.cafe-page {
+    background-color: var(--paper);
+    background-image:
+        radial-gradient(circle at 18% 18%, rgba(122, 74, 42, 0.07) 0 62px, transparent 63px),
+        radial-gradient(circle at 86% 12%, rgba(122, 74, 42, 0.055) 0 48px, transparent 49px),
+        url("https://www.transparenttextures.com/patterns/paper.png");
+    color: var(--ink);
+}
+
+.cafe-page nav a[aria-current="page"] {
+    color: #e6c78d;
+}
+
+.cafe-shell {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 54px 0 20px;
+}
+
+.cafe-intro {
+    max-width: 840px;
+    margin-bottom: 30px;
+}
+
+.cafe-kicker {
+    margin: 0 0 10px;
+    color: var(--coffee);
+    font-family: var(--pixel-font);
+    font-size: 10px;
+    line-height: 1.8;
+    text-transform: uppercase;
+}
+
+.cafe-intro h1 {
+    margin: 0 0 14px;
+    color: var(--ink);
+    font-size: clamp(38px, 7vw, 72px);
+    line-height: 1.08;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+}
+
+.cafe-intro p:not(.cafe-kicker) {
+    max-width: 760px;
+    margin: 0;
+    color: #2a241f;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.philosophy-timeline {
+    max-width: none;
+    margin: 0;
+    padding: 28px;
+    border: 1px solid var(--line);
+    background:
+        linear-gradient(90deg, rgba(17, 17, 17, 0.035) 0 1px, transparent 1px 32px),
+        linear-gradient(180deg, rgba(17, 17, 17, 0.025) 0 1px, transparent 1px 32px),
+        rgba(255, 248, 232, 0.72);
+    box-sizing: border-box;
+}
+
+.philosopher-detail {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+    gap: 24px;
+    width: min(920px, 100%);
+    margin: 0 auto 34px;
+    padding: 24px 28px 28px;
+    border: 1px solid var(--line);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.42), transparent 38%),
+        #fff8e8;
+    box-shadow: 8px 8px 0 rgba(122, 74, 42, 0.18);
+    box-sizing: border-box;
+}
+
+.philosopher-detail::before,
+.philosopher-detail::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: repeating-linear-gradient(90deg, var(--line) 0 8px, transparent 8px 14px);
+}
+
+.philosopher-detail::before { top: -5px; }
+.philosopher-detail::after { bottom: -5px; }
+
+.philosopher-portrait {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    min-height: 0;
+    border: 1px solid var(--line);
+    background:
+        radial-gradient(circle at 50% 35%, rgba(122, 74, 42, 0.12), transparent 58%),
+        #f2dfbd;
+    overflow: hidden;
+}
+
+.philosopher-portrait img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: sepia(0.14) contrast(1.04);
+}
+
+.philosopher-portrait.image-loaded img {
+    display: block;
+}
+
+.philosopher-portrait.image-loaded .portrait-initials {
+    display: none;
+}
+
+.portrait-initials {
+    color: var(--coffee);
+    font-family: var(--pixel-font);
+    font-size: 38px;
+    line-height: 1;
+    text-align: center;
+}
+
+.detail-copy {
+    min-width: 0;
+}
+
+.detail-meta-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    margin-bottom: 12px;
+    color: var(--coffee);
+    font-family: var(--pixel-font);
+    font-size: 8px;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+.detail-copy h2 {
+    margin: 0 0 8px;
+    color: var(--ink);
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 1.02;
+    letter-spacing: 0;
+}
+
+.detail-school {
+    margin: 0 0 18px;
+    color: var(--coffee-dark);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.detail-description {
+    margin: 0 0 18px;
+    color: var(--ink);
+    font-size: 17px;
+    line-height: 1.55;
+}
+
+.detail-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.detail-section {
+    border-top: 1px solid rgba(17, 17, 17, 0.28);
+    padding-top: 12px;
+}
+
+.detail-section h3 {
+    margin: 0 0 8px;
+    color: var(--coffee-dark);
+    font-size: 17px;
+    letter-spacing: 0;
+}
+
+.detail-section ul {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--muted-ink);
+    line-height: 1.45;
+}
+
+.detail-note {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 12px 14px;
+    border: 1px dashed rgba(17, 17, 17, 0.42);
+    color: var(--muted-ink);
+    background: rgba(255, 250, 240, 0.5);
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+.detail-note a {
+    color: var(--coffee-dark);
+    font-weight: 900;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.detail-note a:hover,
+.detail-note a:focus-visible {
+    color: var(--coffee);
+}
+
+.timeline-controls {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr) 42px;
+    gap: 12px;
+    align-items: stretch;
+}
+
+.scroll-button {
+    border: 1px solid var(--line);
+    background: #fff8e8;
+    color: var(--coffee-dark);
+    cursor: pointer;
+    font-family: var(--pixel-font);
+    font-size: 18px;
+    box-shadow: 3px 3px 0 rgba(17, 17, 17, 0.12);
+    transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+}
+
+.scroll-button:hover,
+.scroll-button:focus-visible {
+    background: #f7ead0;
+    outline: none;
+    transform: translate(-1px, -2px);
+    box-shadow: 5px 6px 0 rgba(122, 74, 42, 0.18);
+}
+
+.timeline-track {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    min-height: 152px;
+    padding: 18px 8px 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    scrollbar-color: var(--coffee) var(--paper-deep);
+    scrollbar-width: thin;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 8px;
+    top: 82px;
+    height: 2px;
+    background: var(--coffee);
+    opacity: 0.45;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.timeline-track:focus-visible {
+    outline: 3px solid rgba(122, 74, 42, 0.28);
+    outline-offset: 4px;
+}
+
+.timeline-track::-webkit-scrollbar {
+    height: 10px;
+}
+
+.timeline-track::-webkit-scrollbar-track {
+    background: var(--paper-deep);
+    border: 1px solid rgba(17, 17, 17, 0.2);
+}
+
+.timeline-track::-webkit-scrollbar-thumb {
+    background: var(--coffee);
+    border: 2px solid var(--paper-deep);
+}
+
+.timeline-card {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 58px minmax(118px, 1fr);
+    gap: 10px;
+    align-items: center;
+    width: 220px;
+    min-height: 92px;
+    padding: 10px;
+    border: 1px solid var(--line);
+    background:
+        linear-gradient(135deg, rgba(122, 74, 42, 0.08), transparent 42%),
+        #fffaf0;
+    color: var(--ink);
+    cursor: pointer;
+    font: inherit;
+    text-align: left;
+    scroll-snap-align: start;
+    box-shadow: 4px 4px 0 rgba(17, 17, 17, 0.09);
+    transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+}
+
+.timeline-card::before {
+    content: "";
+    position: absolute;
+    left: 28px;
+    top: -13px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--coffee);
+    background: var(--paper-warm);
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+.timeline-card:hover,
+.timeline-card:focus-visible {
+    transform: translate(-2px, -3px);
+    box-shadow: 7px 8px 0 rgba(122, 74, 42, 0.18);
+    outline: none;
+}
+
+.timeline-card.is-active {
+    background: #f7ead0;
+    box-shadow: inset 0 0 0 3px rgba(122, 74, 42, 0.12), 7px 8px 0 rgba(122, 74, 42, 0.2);
+}
+
+.timeline-card .philosopher-portrait {
+    width: 58px;
+    aspect-ratio: 1 / 1.1;
+}
+
+.timeline-card .portrait-initials {
+    font-size: 18px;
+}
+
+.timeline-card-copy {
+    min-width: 0;
+}
+
+.timeline-card-name {
+    display: block;
+    color: var(--ink);
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.timeline-card-dates {
+    display: block;
+    margin-top: 5px;
+    color: var(--muted-ink);
+    font-size: 12px;
+    line-height: 1.25;
+}
+
+.cafe-footer {
+    max-width: 1180px;
+}
+
+@media (max-width: 820px) {
+    .cafe-shell {
+        width: min(100% - 24px, 640px);
+        padding-top: 38px;
+    }
+
+    .cafe-intro h1 {
+        font-size: 36px;
+        line-height: 1.08;
+    }
+
+    .cafe-intro p:not(.cafe-kicker) {
+        font-size: 16px;
+    }
+
+    .philosophy-timeline {
+        padding: 18px;
+    }
+
+    .philosopher-detail {
+        grid-template-columns: 1fr;
+        padding: 20px 18px 24px;
+    }
+
+    .philosopher-detail > .philosopher-portrait {
+        width: min(260px, 100%);
+        justify-self: center;
+    }
+
+    .detail-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .scroll-button {
+        display: none;
+    }
+
+    .timeline-card {
+        width: 210px;
+    }
+}
