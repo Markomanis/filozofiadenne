@@ -299,3 +299,90 @@ zvaz-image {
         display: block;
     }
 }
+
+.text-version-link {
+    display: inline-block;
+    margin: 25px 0 40px;
+    padding: 10px 18px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.article-page {
+    max-width: 780px;
+    margin: 80px auto;
+    padding: 0 24px;
+}
+
+.article-page h1 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.article-page h2 {
+    font-size: 28px;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+.article-page p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.article-meta {
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.article-lead {
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 28px;
+    margin-top: 50px;
+}
+
+.article-card {
+    border: 1px solid #111;
+    background: #fdfbf7;
+    padding: 28px;
+}
+
+.article-card h2 {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-top: 12px;
+}
+
+.article-card p {
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.article-card a {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 9px 16px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.article-tag {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
