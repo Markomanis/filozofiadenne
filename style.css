@@ -386,3 +386,66 @@ zvaz-image {
     letter-spacing: 1px;
     opacity: 0.7;
 }
+
+@media (max-width: 768px) {
+
+    .article-page {
+        margin: 50px auto;
+        padding: 0 20px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .article-page h1 {
+        font-size: 34px;
+        line-height: 1.1;
+    }
+
+    .article-lead {
+        font-size: 18px;
+    }
+
+    .article-category {
+        margin-top: 50px;
+        padding-top: 24px;
+    }
+
+    .article-category h2 {
+        font-size: 26px;
+    }
+
+    .article-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .article-card {
+        padding: 22px;
+        box-sizing: border-box;
+    }
+
+    .article-card h3 {
+        font-size: 23px;
+        line-height: 1.15;
+    }
+
+    .article-card p {
+        font-size: 16px;
+    }
+}
+
+.article-category {
+    margin-top: 70px;
+    border-top: 1px solid #111;
+    padding-top: 30px;
+}
+
+.article-category h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.empty-category {
+    font-style: italic;
+    opacity: 0.65;
+}
