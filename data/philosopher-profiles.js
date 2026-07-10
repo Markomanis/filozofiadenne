@@ -219,20 +219,21 @@ const customProfiles = {
         dates: "c. 470-399 pred n. l.",
         era: "Klasické Grécko",
         school: "Sokratovská tradícia",
-        image: "images/philosophers/socrates.png",
-        description: "Profil čaká na redakčné spracovanie.",
+        image: "images/philosophers/socrates.jpg",
+        description: "Sokrates stojí na začiatku západnej filozofie ako mysliteľ, ktorý nepísal knihy, ale kládol otázky. Jeho filozofia bola živým rozhovorom: skúšaním vlastných presvedčení, priznaním nevedomosti a hľadaním pravdy aj tam, kde to bolo spoločensky nebezpečné.",
         ideas: [
                 "sokratovský rozhovor",
+                "vedomá nevedomosť",
                 "starosť o dušu",
-                "cnosť",
-                "vedomá nevedomosť"
+                "pravda a odvaha"
         ],
         works: [
                 "Platónove dialógy",
+                "Obrana Sokratova",
                 "Xenofónove spisy",
                 "Aristofanove Oblaky"
         ],
-        note: placeholderNote
+        note: "Viac sa o Sokratovi dočítate v týždenníku č. 6: <a href=\"sokrates-a-nebezpecenstvo-otazok.html\">Sokrates a nebezpečenstvo otázok →</a>"
     },
     "prodicus-of-ceos": {
         id: "prodicus-of-ceos",
@@ -1407,14 +1408,23 @@ const customProfiles = {
     "niccolo-machiavelli": {
         id: "niccolo-machiavelli",
         name: "Niccolò Machiavelli",
-        dates: "DOPLNIŤ",
-        era: "DOPLNIŤ",
-        school: "DOPLNIŤ",
-        image: "images/philosophers/niccolo-machiavelli.png",
-        description: "",
-        ideas: [],
-        works: [],
-        note: placeholderNote
+        dates: "1469-1527",
+        era: "Renesancia",
+        school: "Politický realizmus",
+        image: "images/philosophers/niccolo-machiavelli.jpg",
+        description: "Niccolò Machiavelli bol florentský diplomat, historik a politický mysliteľ, ktorý sa do dejín zapísal najmä nepríjemne presnou analýzou moci. Namiesto idealizovaného obrazu panovníka sledoval, ako politika funguje v skutočnosti: medzi strachom, záujmom, nestálosťou ľudí a zápasom o udržanie štátu.",
+        ideas: [
+                "politický realizmus",
+                "moc a strach",
+                "ľudská povaha",
+                "stabilita štátu"
+        ],
+        works: [
+                "Vladár",
+                "Rozpravy o prvej dekáde Tita Lívia",
+                "Dejiny Florencie"
+        ],
+        note: "Viac sa o Niccolò Machiavellim dočítate v článku: <a href=\"niccolo-machiavelli.html\">Niccolò Machiavelli →</a>"
     },
     "nicolaus-copernicus": {
         id: "nicolaus-copernicus",
@@ -1479,14 +1489,23 @@ const customProfiles = {
     "michel-de-montaigne": {
         id: "michel-de-montaigne",
         name: "Michel de Montaigne",
-        dates: "DOPLNIŤ",
-        era: "DOPLNIŤ",
-        school: "DOPLNIŤ",
-        image: "images/philosophers/michel-de-montaigne.png",
-        description: "",
-        ideas: [],
-        works: [],
-        note: placeholderNote
+        dates: "1533-1592",
+        era: "Renesancia",
+        school: "Renesančný skepticizmus",
+        image: "images/philosophers/michel-de-montaigne.jpg",
+        description: "Michel de Montaigne premenil filozofiu na osobné skúmanie života. Namiesto budovania uzavretého systému písal eseje, v ktorých skúšal vlastné myšlienky, pochyboval o istotách a pozoroval človeka v jeho slabosti, rozporuplnosti aj každodennej skúsenosti.",
+        ideas: [
+                "skepticizmus",
+                "sebaskúmanie",
+                "esej ako forma myslenia",
+                "ľudská krehkosť"
+        ],
+        works: [
+                "Eseje",
+                "Apologia Raymonda Sebonda",
+                "O skúsenosti"
+        ],
+        note: "Viac sa o Michelovi de Montaignovi dočítate v týždenníku č. 7: <a href=\"montaigne-filozof-bez-systemu.html\">Michel de Montaigne: filozof bez systému →</a>"
     },
     "pierre-charron": {
         id: "pierre-charron",
@@ -1659,14 +1678,23 @@ const customProfiles = {
     "rene-descartes": {
         id: "rene-descartes",
         name: "René Descartes",
-        dates: "DOPLNIŤ",
-        era: "DOPLNIŤ",
-        school: "DOPLNIŤ",
-        image: "images/philosophers/rene-descartes.png",
-        description: "",
-        ideas: [],
-        works: [],
-        note: placeholderNote
+        dates: "1596-1650",
+        era: "Raný novovek",
+        school: "Racionalizmus",
+        image: "images/philosophers/rene-descartes.jpg",
+        description: "René Descartes patrí medzi zakladateľov novovekej filozofie. Svojím metodickým pochybovaním hľadal poznanie, ktoré by odolalo omylu, zmyslovým klamom aj zdedeným presvedčeniam. Jeho dôraz na rozum, istotu a mysliaci subjekt výrazne zmenil spôsob, akým filozofia uvažovala o poznaní, svete a človeku.",
+        ideas: [
+                "metodické pochybovanie",
+                "cogito ergo sum",
+                "rozum a istota",
+                "dualizmus mysle a tela"
+        ],
+        works: [
+                "Rozprava o metóde",
+                "Meditácie o prvej filozofii",
+                "Princípy filozofie"
+        ],
+        note: "Viac sa o Reném Descartovi dočítate v týždenníku č. 8: <a href=\"rene-descartes-pochybovanie-rozum-a-hladanie-istoty.html\">René Descartes: pochybovanie, rozum a hľadanie istoty →</a>"
     },
     "baltasar-gracian": {
         id: "baltasar-gracian",
@@ -2619,14 +2647,23 @@ const customProfiles = {
     "arthur-schopenhauer": {
         id: "arthur-schopenhauer",
         name: "Arthur Schopenhauer",
-        dates: "DOPLNIŤ",
-        era: "DOPLNIŤ",
-        school: "DOPLNIŤ",
-        image: "images/philosophers/arthur-schopenhauer.png",
-        description: "",
-        ideas: [],
-        works: [],
-        note: placeholderNote
+        dates: "1788-1860",
+        era: "Moderná filozofia",
+        school: "Pesimizmus a filozofia vôle",
+        image: "images/philosophers/arthur-schopenhauer.jpg",
+        description: "Arthur Schopenhauer videl ľudský život ako zápas medzi túžbou, vôľou a utrpením. V úvahách o spoločenskom uznaní upozorňoval, že človek sa ľahko stane otrokom cudzieho pohľadu, reputácie a verejnej mienky, ak stratí vnútorné meradlo vlastnej hodnoty.",
+        ideas: [
+                "vôľa a predstava",
+                "utrpenie a túžba",
+                "vnútorná nezávislosť",
+                "kritika spoločenského uznania"
+        ],
+        works: [
+                "Svet ako vôľa a predstava",
+                "Aforizmy k životnej múdrosti",
+                "O márnosti a strastiach života"
+        ],
+        note: "Viac sa o Arthurovi Schopenhauerovi dočítate v týždenníku č. 5: <a href=\"issue005.html\">Moderný človek a otroctvo uznania →</a>"
     },
     "sir-william-hamilton-9th-baronet": {
         id: "sir-william-hamilton-9th-baronet",
