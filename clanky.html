@@ -7,6 +7,143 @@
     <meta name="description" content="Archív filozofických článkov projektu FilozofiaDenne.">
     <link rel="stylesheet" href="style.css?v=4">
     <link rel="icon" href="favicon.ico">
+
+    <style>
+        /* Úpravy platia iba na stránke clanky.html */
+        main.article-page {
+            width: min(1180px, calc(100% - 48px));
+            max-width: 1180px;
+            margin: 0 auto;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        main.article-page > h1,
+        main.article-page > .article-lead {
+            max-width: 760px;
+        }
+
+        main.article-page .article-category {
+            margin-top: 64px;
+        }
+
+        main.article-page .article-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 32px;
+            width: 100%;
+        }
+
+        main.article-page .article-card {
+            display: grid;
+            grid-template-columns: minmax(190px, 42%) 1fr;
+            width: 100%;
+            max-width: none;
+            min-width: 0;
+            min-height: 310px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #111;
+            background: rgba(255, 255, 255, 0.42);
+            box-sizing: border-box;
+        }
+
+        main.article-page .article-card-image-link {
+            display: block;
+            min-width: 0;
+            height: 100%;
+            overflow: hidden;
+            border-right: 1px solid #111;
+            background: #e7e1d7;
+        }
+
+        main.article-page .article-card img.article-card-image {
+            display: block;
+            width: 100%;
+            max-width: none;
+            height: 100%;
+            min-height: 310px;
+            margin: 0;
+            padding: 0;
+            object-fit: cover;
+            object-position: center top;
+            border: 0;
+            transition: transform 0.25s ease;
+        }
+
+        main.article-page .article-card-image-link:hover .article-card-image {
+            transform: scale(1.025);
+        }
+
+        main.article-page .article-card-content {
+            display: flex;
+            min-width: 0;
+            flex-direction: column;
+            padding: 26px;
+            box-sizing: border-box;
+        }
+
+        main.article-page .article-card-content .article-tag {
+            margin-bottom: 10px;
+        }
+
+        main.article-page .article-card-content h3 {
+            margin: 0 0 16px;
+            font-size: clamp(1.2rem, 2vw, 1.55rem);
+            line-height: 1.12;
+        }
+
+        main.article-page .article-card-content p {
+            flex: 1;
+            margin: 0 0 24px;
+            line-height: 1.55;
+        }
+
+        main.article-page .article-card-content > a:last-child {
+            align-self: flex-start;
+        }
+
+        @media (max-width: 980px) {
+            main.article-page {
+                width: min(760px, calc(100% - 36px));
+            }
+
+            main.article-page .article-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 620px) {
+            main.article-page {
+                width: calc(100% - 28px);
+            }
+
+            main.article-page .article-category {
+                margin-top: 46px;
+            }
+
+            main.article-page .article-card {
+                display: block;
+                min-height: 0;
+            }
+
+            main.article-page .article-card-image-link {
+                height: 230px;
+                border-right: 0;
+                border-bottom: 1px solid #111;
+            }
+
+            main.article-page .article-card img.article-card-image {
+                height: 230px;
+                min-height: 230px;
+            }
+
+            main.article-page .article-card-content {
+                padding: 22px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -34,58 +171,134 @@
 
         <div class="article-grid">
             <article class="article-card">
-                <span class="article-tag">John Stuart Mill</span>
-                <h3>Filozofické koncepcie šťastia</h3>
-                <p>
-                    Od Jeffersonovho práva usilovať sa o šťastie cez utilitarizmus
+                <a class="article-card-image-link" href="cielom-zivota-je-stastie.html" aria-label="Otvoriť článok Cieľom života je šťastie">
+                    <img
+                        class="article-card-image"
+                        src="images/cielom-zivota-je-stastie/preview.jpg"
+                        alt="Raffaelova Aténska škola a antické cesty k dobrému životu"
+                        loading="lazy">
+                </a>
+
+                <div class="article-card-content">
+                    <span class="article-tag">Antická filozofia</span>
+                    <h3>Cieľom života je šťastie</h3>
+                    <p>
+                        Ako antické školy hľadali dobrý život cez pôžitok,
+                    cnosť a pochybnosť.
+                    </p>
+                    <a href="cielom-zivota-je-stastie.html">
+                        Čítať článok
+                    </a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <a class="article-card-image-link" href="filozoficke-koncepcie-stastia.html" aria-label="Otvoriť článok Filozofické koncepcie šťastia">
+                    <img
+                        class="article-card-image"
+                        src="images/tyzden9/9tyzden_2.png"
+                        alt="Filozofické koncepcie šťastia, John Stuart Mill, utilitarizmus a kritika hedonizmu"
+                        loading="lazy">
+                </a>
+
+                <div class="article-card-content">
+                    <span class="article-tag">John Stuart Mill</span>
+                    <h3>Filozofické koncepcie šťastia</h3>
+                    <p>
+                        Od Jeffersonovho práva usilovať sa o šťastie cez utilitarizmus
                     až po kritiku hedonizmu a digitálny svet nekonečných túžob.
-                </p>
-                <a href="filozoficke-koncepcie-stastia.html">
-                    Čítať článok
-                </a>
+                    </p>
+                    <a href="filozoficke-koncepcie-stastia.html">
+                        Čítať článok
+                    </a>
+                </div>
             </article>
 
             <article class="article-card">
-                <span class="article-tag">René Descartes</span>
-                <h3>René Descartes: pochybovanie, rozum a hľadanie istoty</h3>
-                <p>
-                    René Descartes položil základy novovekej filozofie tým, že sa rozhodol
+                <a class="article-card-image-link" href="rene-descartes-pochybovanie-rozum-a-hladanie-istoty.html" aria-label="Otvoriť článok René Descartes: pochybovanie, rozum a hľadanie istoty">
+                    <img
+                        class="article-card-image"
+                        src="images/tyzden8/8tyzden_2.png"
+                        alt="René Descartes, metodické pochybovanie, rozum a hľadanie istoty"
+                        loading="lazy">
+                </a>
+
+                <div class="article-card-content">
+                    <span class="article-tag">René Descartes</span>
+                    <h3>René Descartes: pochybovanie, rozum a hľadanie istoty</h3>
+                    <p>
+                        René Descartes položil základy novovekej filozofie tým, že sa rozhodol
                     spochybniť všetko, čomu dovtedy veril. Ako možno dospieť k istému poznaniu?
-                </p>
-                <a href="rene-descartes-pochybovanie-rozum-a-hladanie-istoty.html">
-                    Čítať článok
-                </a>
+                    </p>
+                    <a href="rene-descartes-pochybovanie-rozum-a-hladanie-istoty.html">
+                        Čítať článok
+                    </a>
+                </div>
             </article>
 
             <article class="article-card">
-                <span class="article-tag">Michel de Montaigne</span>
-                <h3>Michel de Montaigne: filozof bez systému</h3>
-                <p>
-                    Ako sa z pochybnosti, skúsenosti a úprimného
+                <a class="article-card-image-link" href="montaigne-filozof-bez-systemu.html" aria-label="Otvoriť článok Michel de Montaigne: filozof bez systému">
+                    <img
+                        class="article-card-image"
+                        src="images/tyzden7/7tyzden_2.png"
+                        alt="Michel de Montaigne, Eseje, skepticizmus a filozofia života"
+                        loading="lazy">
+                </a>
+
+                <div class="article-card-content">
+                    <span class="article-tag">Michel de Montaigne</span>
+                    <h3>Michel de Montaigne: filozof bez systému</h3>
+                    <p>
+                        Ako sa z pochybnosti, skúsenosti a úprimného
                     sebaskúmania stala filozofia života.
-                </p>
-                <a href="montaigne-filozof-bez-systemu.html">
-                    Čítať článok
-                </a>
+                    </p>
+                    <a href="montaigne-filozof-bez-systemu.html">
+                        Čítať článok
+                    </a>
+                </div>
             </article>
 
             <article class="article-card">
-                <span class="article-tag">Sokrates</span>
-                <h3>Sokrates a nebezpečenstvo otázok</h3>
-                <p>
-                    Filozofický pohľad na múdrosť, nevedomosť a spoločnosť,
+                <a class="article-card-image-link" href="sokrates-a-nebezpecenstvo-otazok.html" aria-label="Otvoriť článok Sokrates a nebezpečenstvo otázok">
+                    <img
+                        class="article-card-image"
+                        src="images/tyzden6/6tyzden_2.png"
+                        alt="Sokrates, múdrosť, nevedomosť a nebezpečenstvo otázok"
+                        loading="lazy">
+                </a>
+
+                <div class="article-card-content">
+                    <span class="article-tag">Sokrates</span>
+                    <h3>Sokrates a nebezpečenstvo otázok</h3>
+                    <p>
+                        Filozofický pohľad na múdrosť, nevedomosť a spoločnosť,
                     ktorá sa bála premýšľania.
-                </p>
-                <a href="sokrates-a-nebezpecenstvo-otazok.html">
-                    Čítať článok
-                </a>
+                    </p>
+                    <a href="sokrates-a-nebezpecenstvo-otazok.html">
+                        Čítať článok
+                    </a>
+                </div>
             </article>
 
             <article class="article-card">
-                <span class="article-tag">Diogenes</span>
-                <h3>Diogenes a sloboda od spoločenských ilúzií</h3>
-                <p>Textová verzia bude doplnená.</p>
-                <a href="issue004.html">Otvoriť vydanie</a>
+                <a class="article-card-image-link" href="issue004.html" aria-label="Otvoriť článok Diogenes a sloboda od spoločenských ilúzií">
+                    <img
+                        class="article-card-image"
+                        src="images/tyzden4/4tyzden_1.png"
+                        alt="Diogenes, kynizmus a sloboda od spoločenských ilúzií"
+                        loading="lazy">
+                </a>
+
+                <div class="article-card-content">
+                    <span class="article-tag">Diogenes</span>
+                    <h3>Diogenes a sloboda od spoločenských ilúzií</h3>
+                    <p>
+                        Textová verzia bude doplnená.
+                    </p>
+                    <a href="issue004.html">
+                        Otvoriť vydanie
+                    </a>
+                </div>
             </article>
         </div>
     </section>
@@ -95,15 +308,25 @@
 
         <div class="article-grid">
             <article class="article-card">
-                <span class="article-tag">Za oponou reality</span>
-                <h3>Pasca pomenovania</h3>
-                <p>
-                    Ako si názvy, pojmy a nálepky môžeme zameniť za skutočné
-                    porozumenie veciam a ľuďom.
-                </p>
-                <a href="pasca-pomenovania.html">
-                    Čítať článok
+                <a class="article-card-image-link" href="pasca-pomenovania.html" aria-label="Otvoriť článok Pasca pomenovania">
+                    <img
+                        class="article-card-image"
+                        src="images/tyzden9/9tyzden_6.png"
+                        alt="Pasca pomenovania, jazyk, pojmy, nálepky a hranice porozumenia"
+                        loading="lazy">
                 </a>
+
+                <div class="article-card-content">
+                    <span class="article-tag">Za oponou reality</span>
+                    <h3>Pasca pomenovania</h3>
+                    <p>
+                        Ako si názvy, pojmy a nálepky môžeme zameniť za skutočné
+                    porozumenie veciam a ľuďom.
+                    </p>
+                    <a href="pasca-pomenovania.html">
+                        Čítať článok
+                    </a>
+                </div>
             </article>
         </div>
     </section>
@@ -113,15 +336,25 @@
 
         <div class="article-grid">
             <article class="article-card">
-                <span class="article-tag">Seneca</span>
-                <h3>Seneca o sláve, publiku a potrebe uznania</h3>
-                <p>
-                    Stoická úvaha o dave, popularite, potrebe potlesku a vnútornom
-                    meradle vlastnej hodnoty.
-                </p>
-                <a href="seneca-o-slave-publiku-a-potrebe-uznania.html">
-                    Čítať článok
+                <a class="article-card-image-link" href="seneca-o-slave-publiku-a-potrebe-uznania.html" aria-label="Otvoriť článok Seneca o sláve, publiku a potrebe uznania">
+                    <img
+                        class="article-card-image"
+                        src="images/tyzden9/9tyzden_8.png"
+                        alt="Seneca o sláve, publiku, popularite a potrebe uznania"
+                        loading="lazy">
                 </a>
+
+                <div class="article-card-content">
+                    <span class="article-tag">Seneca</span>
+                    <h3>Seneca o sláve, publiku a potrebe uznania</h3>
+                    <p>
+                        Stoická úvaha o dave, popularite, potrebe potlesku a vnútornom
+                    meradle vlastnej hodnoty.
+                    </p>
+                    <a href="seneca-o-slave-publiku-a-potrebe-uznania.html">
+                        Čítať článok
+                    </a>
+                </div>
             </article>
         </div>
     </section>
@@ -131,10 +364,24 @@
 
         <div class="article-grid">
             <article class="article-card">
-                <span class="article-tag">Arthur Schopenhauer</span>
-                <h3>Moderný človek a otroctvo uznania</h3>
-                <p>Textová verzia bude doplnená.</p>
-                <a href="issue005.html">Otvoriť vydanie</a>
+                <a class="article-card-image-link" href="issue005.html" aria-label="Otvoriť článok Moderný človek a otroctvo uznania">
+                    <img
+                        class="article-card-image"
+                        src="images/tyzden5/5tyzden_1.png"
+                        alt="Arthur Schopenhauer, moderný človek, status a otroctvo uznania"
+                        loading="lazy">
+                </a>
+
+                <div class="article-card-content">
+                    <span class="article-tag">Arthur Schopenhauer</span>
+                    <h3>Moderný človek a otroctvo uznania</h3>
+                    <p>
+                        Textová verzia bude doplnená.
+                    </p>
+                    <a href="issue005.html">
+                        Otvoriť vydanie
+                    </a>
+                </div>
             </article>
         </div>
     </section>
