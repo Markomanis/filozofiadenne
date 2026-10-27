@@ -68,11 +68,11 @@ section {
     background: #fdfbf7;
 }
 
-.streams-emblem {
-    flex: 0 0 240px;
-    width: 240px;
-    height: 240px;
-    mix-blend-mode: multiply;
+.streams-poster {
+    flex: 0 0 340px;
+    width: 340px;
+    height: auto;
+    border: 1px solid #111;
 }
 
 .streams-text {
@@ -82,36 +82,6 @@ section {
 .streams-text h2 {
     margin: 0 0 22px;
     font-size: 30px;
-}
-
-.stream {
-    margin-bottom: 22px;
-}
-
-.stream-day {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #7d2e2a;
-}
-
-.stream-time {
-    font-size: 38px;
-    font-weight: 900;
-    line-height: 1.1;
-}
-
-.stream h3 {
-    margin: 2px 0 6px;
-    font-size: 20px;
-    font-style: italic;
-}
-
-.stream p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
 }
 
 .stream-link {
@@ -355,14 +325,10 @@ zvaz-image {
         box-sizing: border-box;
     }
 
-    .streams-emblem {
+    .streams-poster {
         flex-basis: auto;
-        width: 180px;
-        height: 180px;
-    }
-
-    .stream-time {
-        font-size: 32px;
+        width: 100%;
+        max-width: 320px;
     }
 
     .issues {
