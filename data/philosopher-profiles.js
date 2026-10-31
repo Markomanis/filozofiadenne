@@ -3856,14 +3856,21 @@ const customProfiles = {
     "martin-heidegger": {
         id: "martin-heidegger",
         name: "Martin Heidegger",
-        dates: "DOPLNIŤ",
-        era: "DOPLNIŤ",
-        school: "DOPLNIŤ",
-        image: "images/philosophers/martin-heidegger.png",
-        description: "",
-        ideas: [],
-        works: [],
-        note: placeholderNote
+        dates: "1889-1976",
+        era: "Moderná filozofia",
+        school: "Fenomenológia a existenciálna ontológia",
+        image: "images/philosophers/martin-heidegger.jpg",
+        description: "Martin Heidegger sa pýtal na zmysel bytia a na spôsob, akým existuje človek, ktorému ide o vlastnú existenciu. Smrť chápal ako najvlastnejšiu možnosť, ktorú za nás nikto nemôže prevziať, a práve vedomie konečnosti podľa neho umožňuje žiť autentickejšie než len podľa toho, ako sa „žije“.",
+        ideas: [
+                "Dasein (tu-bytie)",
+                "bytie a čas",
+                "konečnosť a bytie k smrti",
+                "autentická a neautentická existencia"
+        ],
+        works: [
+                "Bytie a čas"
+        ],
+        note: "Viac sa o Martinovi Heideggerovi dočítate v mesačníku č. 12: <a href=\"kym-mame-cas.html\">Kým máme čas →</a>"
     },
     "antonio-gramsci": {
         id: "antonio-gramsci",
